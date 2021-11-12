@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    android:padding="5dp"
+    tools:context=".StopWatchActivity">
+
+    <ImageView
+        android:id="@+id/ivSplash"
+        android:layout_width="276dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/nothing_text"
+        android:src="@drawable/bgcircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icAcnhor"
+        android:layout_width="358dp"
+        android:layout_height="357dp"
+        android:contentDescription="@string/nothing_text"
+        android:src="@drawable/icanchor"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSplash"
+        app:layout_constraintEnd_toEndOf="@+id/ivSplash"
+        app:layout_constraintStart_toStartOf="@+id/ivSplash"
+        app:layout_constraintTop_toTopOf="@+id/ivSplash" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/m_regular"
+        android:text="Start now"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSplash"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <Chronometer
+        android:id="@+id/timeHere"
+        android:textColor="#fff"
+        android:textSize="62sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icAcnhor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStop"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/btn_red"
+        android:fontFamily="@font/m_regular"
+        android:text="Stop now"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart"
+        app:layout_constraintVertical_bias="0.766" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
