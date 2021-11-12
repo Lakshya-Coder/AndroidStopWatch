@@ -26,8 +26,15 @@ class StopWatchActivity : AppCompatActivity() {
         binding.btnStart.setOnClickListener {
             binding.icAcnhor.startAnimation(roundingalone)
 
-            binding.btnStart.animate().alpha(0F).setDuration(300).start()
-            binding.btnStop.animate().alpha(1F).translationY(-80f).setDuration(300).start()
+            binding.btnStart.animate()
+                .alpha(0F)
+                .setDuration(300)
+                .start()
+            binding.btnStop.animate()
+                .alpha(1F)
+                .translationY(-80f)
+                .setDuration(300)
+                .start()
             binding.timeHere.base = SystemClock.elapsedRealtime()
             binding.timeHere.start()
 
@@ -40,8 +47,15 @@ class StopWatchActivity : AppCompatActivity() {
         binding.btnStop.setOnClickListener {
             binding.icAcnhor.animation = null
 
-            binding.btnStart.animate().alpha(1F).setDuration(300).start()
-            binding.btnStop.animate().alpha(0f).translationY(+80f).setDuration(300).start()
+            binding.btnStart.animate()
+                .alpha(1F)
+                .setDuration(300)
+                .start()
+            binding.btnStop.animate()
+                .alpha(0f)
+                .translationY(+80f)
+                .setDuration(300)
+                .start()
 
             binding.timeHere.stop()
 
